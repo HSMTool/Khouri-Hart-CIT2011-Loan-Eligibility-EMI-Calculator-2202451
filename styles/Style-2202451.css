@@ -1,0 +1,165 @@
+/* ==============================
+   CIT2011 Loan Calculator - Bank Theme
+   Author: Khouri Hart (2202451)
+============================== */
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #e9f7ef, #d0f0d0);
+    color: #1a1a1a;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #1b5e20; /* Deep green for trust */
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* ID Image Styling */
+.id-img {
+    display: block;
+    margin: 15px auto;
+    width: 220px;
+    border: 3px solid #2e7d32;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Loan Form Container */
+form {
+    background: white;
+    max-width: 480px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels and Inputs */
+label {
+    display: inline-block;
+    width: 180px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1b1b1b;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: calc(100% - 190px);
+    padding: 8px;
+    border: 1px solid #b5b5b5;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #43a047;
+    box-shadow: 0 0 5px #a5d6a7;
+    outline: none;
+}
+
+/* Checkbox Section */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#otherText {
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Required asterisk */
+.req {
+    color: red;
+    font-weight: bold;
+}
+
+/* Buttons */
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px 4px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background-color: #1b5e20;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* Result Messages */
+#result {
+    margin-top: 25px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.eligible {
+    color: #2e7d32;
+    font-weight: bold;
+    background: #e8f5e9;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #a5d6a7;
+}
+
+.not-eligible {
+    color: #c62828;
+    font-weight: bold;
+    background: #ffebee;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ef9a9a;
+}
+
+/* Storage Data Display */
+#storageDisplay {
+    margin: 30px auto;
+    padding: 15px;
+    max-width: 480px;
+    background: #f1f8e9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: 15px;
+    text-align: left;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    form {
+        width: 92%;
+        padding: 20px;
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    input, select {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    button {
+        width: 100%;
+        margin: 6px 0;
+    }
+}
